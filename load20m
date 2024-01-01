@@ -1,0 +1,3 @@
+echo $1/tmpdisk
+MYDIR=`dirname $0`
+sudo env LD_LIBRARY_PATH=/usr/local/lib/:/usr/local/lib/x86_64-linux-gnu/ $MYDIR/db_bench --benchmarks="fillrandom" --num=20000000 --value_size=4096 --block_size=2097152 --db=$1/tmpdisk > $1/20m.txt
