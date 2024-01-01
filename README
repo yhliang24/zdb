@@ -10,5 +10,3 @@ Get up and running quickly:
     $ autoreconf -i
     $ ./configure
     $ make
-    # make install
-    # ldconfig
